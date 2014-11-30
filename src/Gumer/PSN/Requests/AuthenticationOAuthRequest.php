@@ -15,7 +15,7 @@ class AuthenticationOAuthRequest extends AbstractRequest {
 	/**
 	 * @var array
 	 */
-	protected $data = [
+	protected $data = array(
 		'grant_type'    => 'authorization_code',
 		'client_id'     => 'b0d0d7ad-bb99-4ab1-b25e-afa0c76577b0',
 		'client_secret' => 'Zo4y8eGIa3oazIEp',
@@ -23,7 +23,7 @@ class AuthenticationOAuthRequest extends AbstractRequest {
 		'state'         => 'x',
 		'scope'         => 'psn:sceapp',
 		'duid'          => '00000005006401283335353338373035333434333134313a433635303220202020202020202020202020202020'
-	];
+	);
 
 	/**
 	 * @param string $authCode

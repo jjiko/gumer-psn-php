@@ -58,7 +58,7 @@ class AbstractAuthenticatedRequest extends AbstractRequest {
 	 */
 	public function getHeaders()
 	{
-		return parent::getHeaders() + [
+		return parent::getHeaders() + array(
 			'Access-Control-Request-Method'  => 'GET',
 			'Origin'                         => 'http://psapp.dl.playstation.net',
 			'Access-Control-Request-Headers' => 'Origin, Accept-Language, Authorization, Content-Type, Cache-Control',
@@ -66,7 +66,7 @@ class AbstractAuthenticatedRequest extends AbstractRequest {
 			'Authorization'                  => 'Bearer ' . $this->user()->getAccessToken(),
 			'Cache-Control'                  => 'no-cache',
 			'X-Requested-With'               => 'com.scee.psxandroid',
-		];
+		);
 	}
 
 }

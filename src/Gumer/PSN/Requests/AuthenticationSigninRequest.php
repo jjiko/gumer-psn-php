@@ -10,12 +10,12 @@ class AuthenticationSigninRequest extends AbstractRequest {
 	/**
 	 * @var array
 	 */
-	protected $params = [
+	protected $params = array(
 		'redirectURL_oauth' => 'com.scee.psxandroid.scecompcall://redirect',
 		'client_id'         => 'b0d0d7ad-bb99-4ab1-b25e-afa0c76577b0',
 		'scope_psn'         => 'psn:sceapp',
 		'cltm'              => '1399637146935',
 		'service_entity'    => 'urn:service-entity:psn'
-	];
+	);
 
 }

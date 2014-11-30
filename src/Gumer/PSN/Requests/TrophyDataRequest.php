@@ -10,7 +10,7 @@ class TrophyDataRequest extends AbstractAuthenticatedRequest {
 	/**
 	 * @param array
 	 */
-	protected $params = ['offset' => 0, 'limit' => 20, 'iconsize' => 64];
+	protected $params = array('offset' => 0, 'limit' => 20, 'iconsize' => 64);
 
 	/**
 	 * @param mixed $value

@@ -15,16 +15,16 @@ class AuthenticationSigninPostRequest extends AbstractRequest {
 	/**
 	 * @var array
 	 */
-	protected $data = [
+	protected $data = array(
 		'service_entity' => 'psn'
-	];
+		);
 
 	/**
 	 * @var array
 	 */
-	protected $headers = [
+	protected $headers = array(
 		'Origin' => 'https://auth.api.sonyentertainmentnetwork.com'
-	];
+		);
 
 	/**
 	 * @param string $location

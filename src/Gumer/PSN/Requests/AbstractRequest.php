@@ -15,17 +15,17 @@ abstract class AbstractRequest implements RequestInterface {
 	/**
 	 * @var string
 	 */
-	protected $data = [];
+	protected $data = array();
 
 	/**
 	 * @var string
 	 */
-	protected $params = [];
+	protected $params = array();
 
 	/**
 	 * @var array
 	 */
-	protected $headers = [];
+	protected $headers = array();
 
 	/**
 	 * @return string

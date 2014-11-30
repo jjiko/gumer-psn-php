@@ -105,9 +105,9 @@ class Connection {
 	 */
 	protected function parseUri($uri)
 	{
-		return str_replace([
+		return str_replace(array(
 			'{{lang}}', '{{region}}'
-		], [$this->lang, $this->region], $uri);
+		), array($this->lang, $this->region), $uri);
 	}
 
 }

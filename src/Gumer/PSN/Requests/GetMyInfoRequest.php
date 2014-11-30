@@ -12,10 +12,10 @@ class GetMyInfoRequest extends AbstractAuthenticatedRequest {
 	 */
 	public function getHeaders()
 	{
-		return [
+		return array(
 			'Access-Control-Request-Method' => 'GET',
 			'X-NP-ACCESS-TOKEN'             => $this->user()->getAccessToken(),
-		];
+		);
 	}
 
 }
