@@ -9,7 +9,7 @@ class PSNServiceProvider extends ServiceProvider {
 	{
 		$this->app->bindShared('gumer.guzzle', function()
 		{
-			$client = new Client('', ['redirect.disable' => true]);
+			$client = new Client('', array('redirect.disable' => true));
 
 			return $client;
 		});
