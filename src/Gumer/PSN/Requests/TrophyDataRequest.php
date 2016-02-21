@@ -10,10 +10,10 @@ class TrophyDataRequest extends AbstractAuthenticatedRequest {
 	/**
 	 * @param array
 	 */
-	protected $params = array('offset' => 0, 'limit' => 20, 'iconsize' => 64);
+	protected $params = array('offset' => 0, 'limit' => 20, 'iconsize' => 's', 'lang' => 'en');
 
 	/**
-	 * @param mixed $value
+	 * @param string $value
 	 * @return void
 	 */
 	public function setIconSize($value)
@@ -22,7 +22,7 @@ class TrophyDataRequest extends AbstractAuthenticatedRequest {
 	}
 
 	/**
-	 * @param mixed $userId
+	 * @param string $userId
 	 * @return void
 	 */
 	public function setUserId($userId)
@@ -31,21 +31,31 @@ class TrophyDataRequest extends AbstractAuthenticatedRequest {
 	}
 
 	/**
-	 * @param mixed $value
+	 * @param int $value
 	 * @return void
 	 */
 	public function setOffset($value)
 	{
-		$this->params['offset'] = (string) $value;
+		$this->params['offset'] = (int) $value;
 	}
 
 	/**
-	 * @param mixed $value
+	 * @param int $value
 	 * @return void
 	 */
 	public function setLimit($value)
 	{
-		$this->params['limit'] = (string) $value;
+		$this->params['limit'] = (int) $value;
+	}
+
+	/**
+	 * @param string $value
+	 * @return void
+	 */
+	public function setLang($value)
+	{
+		$this->params['lang'] = mb_strtolower($value);
+		$this->user()->setLang(mb_strtolower($value));
 	}
 
 }
