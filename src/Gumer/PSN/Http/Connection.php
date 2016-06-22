@@ -42,6 +42,8 @@ class Connection {
 		$this->guzzle->setSslVerification(false, false);
 		$this->guzzle->setUserAgent('User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; EN; C6502 Build/10.4.1.B.0.101) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 PlayStation App/1.60.5/EN/EN');
 		$this->guzzle->addSubscriber(new CookiePlugin(new ArrayCookieJar()));
+		
+		return $this;
 	}
 
 	/**
