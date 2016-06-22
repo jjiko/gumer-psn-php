@@ -46,8 +46,7 @@ I don't have to explain this, do I? But let me just say that you need a folder c
 
 // Setup the connections and instances.
 $client     = new Guzzle\Http\Client('', ['redirect.disable' => true]);
-$connection = new Gumer\PSN\Http\Connection;
-$connection->setGuzzle($client);
+$connection = (new Gumer\PSN\Http\Connection)->setGuzzle($client);
 $provider   = new Gumer\PSN\Authentication\UserProvider($connection);
 $auth       = Gumer\PSN\Authentication\Manager::instance($provider);
 
