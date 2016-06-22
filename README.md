@@ -8,7 +8,7 @@ Try it out here: http://ilendemli.info/PSN/index.php/
     *  Added composer support.
     *  Breaking changes, now in Gumer\PSN namespace.
     *  Requests are made out of constructed objects.
-    *  Authentication manager with user provider and interface that are extenisble.
+    *  Authentication manager with user provider and interface that are extensible.
 * **v0.2**:
 	* updated for the new login procedure by sony
 	* make the code a bit more tidier
