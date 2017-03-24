@@ -1,6 +1,6 @@
 <?php namespace Gumer\PSN\Http;
 
-use Guzzle\Http\Client;
+use GuzzleHttp\Client;
 use Guzzle\Plugin\Cookie\CookiePlugin;
 use Gumer\PSN\Requests\RequestInterface;
 use Guzzle\Plugin\Cookie\CookieJar\ArrayCookieJar;
