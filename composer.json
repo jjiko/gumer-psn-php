@@ -13,7 +13,7 @@
 		}
 	],
 	"require": {
-		"guzzle/guzzle": "3.8.*@dev",
+		"guzzle/guzzle": "~6",
 		"illuminate/support": "~5"
 	},
 	"require-dev": {
