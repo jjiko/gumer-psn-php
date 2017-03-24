@@ -1,6 +1,6 @@
 <?php namespace Gumer\PSN;
 
-use Guzzle\Http\Client;
+use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
 
 class PSNServiceProvider extends ServiceProvider {
